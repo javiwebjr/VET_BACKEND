@@ -42,8 +42,8 @@ app.use((req, res, next) => {
 app.use('/api/veterinarios', veterinarioRoutes);
 app.use('/api/pacientes', pacienteRoutes);
 
-// const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT;
 
-// app.listen(PORT, () => {
-//     console.log(`Servidor funcionando en el puerto ${PORT}`)
-// });
+app.listen(PORT, () => {
+    console.log(`Servidor funcionando en el puerto ${PORT}`)
+});
